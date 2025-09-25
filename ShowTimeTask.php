@@ -44,7 +44,29 @@ class ShowTimeTask extends ScheduledTask {
     }
 }
 
+<?php
 
+
+declare(stricttype=1);
+
+
+namespace Showtime;
+
+
+use Shopware\Core\Framework\MessageQueue\ScheduledTask\ScheduledTask;
+
+class ShowTimeTask extends ScheduledTask{
+
+    public static function getTaskName() : string {
+
+        return 'show_time.task';
+    }
+    
+    public static function getDefaultInterval() : int {
+
+        return 60;
+    }
+}
 
 
 
