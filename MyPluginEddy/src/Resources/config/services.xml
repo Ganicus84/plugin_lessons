@@ -6,12 +6,12 @@
 
     <services>
         <!-- hier wird der Scheduled Task Registriert -->
-        <service id="ShowTime\ShowTimeTask" public="true">
+        <service id="MyPluginEddy\ShowTimeTask" public="true">
             <tag name="shopware.scheduled_task"/>
         </service>
 
         <!-- hier wird der Handler Task Registriert -->
-        <service id="ShowTime\ShowTimeTaskHandler">
+        <service id="MyPluginEddy\ShowTimeTaskHandler">
             <tag name="messenger.message_handler"/>
         </service>
     </services>

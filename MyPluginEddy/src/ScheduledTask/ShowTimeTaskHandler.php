@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ShowTime;
+namespace MyPluginEddy;
 
 use Shopware\Core\Framework\MessageQueue\ScheduledTask\ScheduledTaskHandler;
 
