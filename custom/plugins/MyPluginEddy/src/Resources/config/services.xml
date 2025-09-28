@@ -5,13 +5,18 @@
                                http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-    <service id="MyPluginEddy\ScheduledTask\ShowTimeTask" public="true">
-        <tag name="shopware.scheduled_task"/>
-    </service>
+        <service id="MyPluginEddy\ScheduledTask\ShowTimeTask" public="true">
+            <tag name="shopware.scheduled_task"/>
+        </service>
 
-    <service id="MyPluginEddy\ScheduledTask\ShowTimeTaskHandler">
-        <tag name="messenger.message_handler"/>
-    </service>
-</services>
+        <service id="MyPluginEddy\ScheduledTask\ShowTimeTaskHandler">
+            <tag name="messenger.message_handler"/>
+        </service>
+
+        <service id="MyPluginEddy\Service\FilesystemService">
+            <argument type="service" id="shopware.filesystem.default"/>
+        </service>
+
+    </services>
 
 </container>
