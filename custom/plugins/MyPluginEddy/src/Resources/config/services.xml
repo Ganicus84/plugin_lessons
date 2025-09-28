@@ -5,14 +5,13 @@
                                http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <!-- hier wird der Scheduled Task Registriert -->
-        <service id="MyPluginEddy\ShowTimeTask" public="true">
-            <tag name="shopware.scheduled_task"/>
-        </service>
+    <service id="MyPluginEddy\ScheduledTask\ShowTimeTask" public="true">
+        <tag name="shopware.scheduled_task"/>
+    </service>
 
-        <!-- hier wird der Handler Task Registriert -->
-        <service id="MyPluginEddy\ShowTimeTaskHandler">
-            <tag name="messenger.message_handler"/>
-        </service>
-    </services>
+    <service id="MyPluginEddy\ScheduledTask\ShowTimeTaskHandler">
+        <tag name="messenger.message_handler"/>
+    </service>
+</services>
+
 </container>
