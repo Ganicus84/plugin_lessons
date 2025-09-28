@@ -1,0 +1,27 @@
+{
+  "name": "eddy/my-plugin-eddy",
+  "description": "Learning plugin with a scheduled task + handler and simple filesystem write.",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "version": "1.0.0",
+  "require": {
+    "php": ">=8.1",
+    "shopware/core": "^6.5 || ^6.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "MyPluginEddy\\": "src/"
+    }
+  },
+  "extra": {
+    "label": {
+      "en-GB": "MyPluginEddy",
+      "de-DE": "MyPluginEddy"
+    },
+    "description": {
+      "en-GB": "Plugin demo with scheduled task & handler.",
+      "de-DE": "Plugin-Demo mit Scheduled Task & Handler."
+    },
+    "shopware-plugin-class": "MyPluginEddy\\MyPluginEddy"
+  }
+}
