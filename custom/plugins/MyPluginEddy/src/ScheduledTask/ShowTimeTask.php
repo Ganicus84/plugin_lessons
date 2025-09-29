@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace  MyPluginEddy\ScheduledTask;
+namespace MyPluginEddy\ScheduledTask;
 
 use Shopware\Core\Framework\MessageQueue\ScheduledTask\ScheduledTask;
 
